@@ -1,0 +1,247 @@
+
+.rf_prescription{
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+    color: black;
+    font-size: 1.3rem;
+
+}
+
+
+/* Style the input fields */
+/*input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}*/
+.multistep-container{
+	max-width: 600px;
+	margin: 0 auto;
+}
+.multistep-container .active-button{
+	display: table;
+	margin: auto;
+	padding-left: 0;
+	/*adding overflow to show when hide*/
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.multistep-container .active-button li{
+	display: inline-block;
+	width: 180px;
+}
+.multistep-container .active-button li .round-btn{
+	
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #ccc;
+	display: block;
+	color: #000;
+	text-align: center;
+	font-family: 'poppins';
+	font-weight: 500;
+	line-height: 30px;
+	max-width: 100%;
+	margin:auto;
+	position: relative;
+	z-index: 1;
+
+}
+.multistep-container .active-button li.active .round-btn
+{
+	background-color: #E66363;
+	color: #fff;
+}
+.multistep-container .active-button li:not(:first-child) .round-btn:before{
+	position: absolute;
+	content: '' ;
+	width: 154px;
+	height: 3px;
+	background-color: #ccc;
+	left: -154px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+
+.multistep-container .active-button li.active:not(:first-child) .round-btn:before{
+	background-color: #E66363;
+	color: #fff;
+	}
+
+.multistep-container .multistep-form-area
+{
+	background-color: #fff;
+	margin-top: 30px;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+	position: relative;
+	overflow: hidden;
+	min-height: 950px;
+	max-height: 950px;
+}
+.multistep-container .multistep-form-area .form-box
+{
+	position: absolute;
+	top: 25px;
+	left: 25px;
+}
+.multistep-container .multistep-form-area .form-box h4
+{
+	font-family: 'montserrat';
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 20px;
+	/*margin-bottom: 20px;*/
+	text-align: center;
+}
+
+.multistep-container .multistep-form-area .form-box label
+{
+	font-family: 'roboto';
+	font-weight: 500px;
+	font-size: 15px;
+}
+.multistep-container .multistep-form-area .form-box:nth-child(2),
+.multistep-container .multistep-form-area .form-box:nth-child(3)
+{
+	/*display: none;*/
+}
+ .form-box.refine_form_section_2 {
+	display: none;
+}
+ .form-box.refine_form_section_3 {
+	display: none;
+}
+.multistep-container .multistep-form-area .form-box .button-row .next,
+.multistep-container .multistep-form-area .form-box .button-row .previous,
+.multistep-container .multistep-form-area .form-box .button-row .submit
+{ 
+	background-color:#E66363 ;
+	border:0;
+	box-shadow: none;
+	padding:7px 30px;
+	min-width: 100px;
+	border-radius: 20px;
+	color: #fff;
+	font-family: 'roboto';
+	font-weight: 500;
+	margin: 30px;
+
+}
+
+.multistep-container .multistep-form-area .form-box .button-row
+{
+	display: table;
+	margin:auto;
+	margin-top: 20px;
+
+}
+ /* styling to 4 digit */
+/* .password{
+ 	width: 100%;
+
+ }*/
+.password input {
+  display: flex;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 3rem;
+}
+.password{
+	display: flex;
+}
+input[type="password"] {
+    background: #E1BEBE;
+    width: 100%;
+    margin: 0 0.5;
+    margin: 3px;
+}
+
+.form_3{
+	padding-right: 30px;
+	/*background-color: lightgray;*/
+
+}
+.medical_form_show, .four_digit_password{
+	/*background-color: red;*/
+	display: none;
+}
+
+/*.four_digit_password{
+	display: none;
+}*/
+
+
+.error_styling{
+	background-color: black;
+}
+select{
+	height: 35px;
+	border: 2px solid #B4F3E9;
+}
+
+.required{
+	color: red;
+	display: inline;
+}
+#ajaxSpinnerImage {
+  display: none;
+}
+
+.spinner_outer{
+	width: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: gray;
+}
+.spinner_inner{
+	width: 50%;
+	display: grid;
+	place-items:center;
+	background-color: green;
+}
+
+.u-column1.col-1 {
+    width: 100% !important;
+}
+.u-column2.col-2 {
+    display: none;
+}
+/*
+
+prescriber form button
+
+*/
+.prescriber_button{
+	background: #1E446E; 
+	/*background:red;*/
+	border-radius: 10px;
+	margin-left:15px; 
+	padding:10px !important;
+	color:#fff;
+	float:right;
+}
+.patient_button{
+	background: #1E446E; 
+	color:#fff; 
+	float: right; 
+	border-radius: 10px;
+}
+.patient_span{
+	color:grey; 
+	font-size: 25px;
+}
+#hide_form_jquery{
+	display: none;
+
+}
